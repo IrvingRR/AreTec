@@ -1,0 +1,227 @@
+/* Global Styles
+---------------------------------- */
+@import url('./globals-styles.css');
+
+/* Hero Section
+---------------------------------- */
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/contact-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: var(--padding-section);
+    position: relative;
+}
+
+.hero-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 10px 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 50px;
+    color: #fff;
+}
+
+.hero-text {
+    color: #fff;
+    width: 50%;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Publications 
+_____________________________________*/
+.publications-grid {
+    width: 100%;
+    padding: var(--padding-section);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-content: center;
+    gap: 20px;
+}
+
+.publication {
+    width: 350px;
+    height: 515px;
+    border: 1px solid #ccc;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.publication iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Container Form Grid 
+_____________________________________*/
+.container-form-grid {
+    width: 100%;
+    padding: var(--padding-section);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    margin: auto;
+}
+
+.container-form-text {
+    padding: var(--padding-section);
+}
+
+.container-form-title {
+    font-size: 30px;
+}
+
+/* Localutation Section */
+.container-localitation-grid {
+    width: 100%;
+    padding: var(--padding-section);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    margin: auto;
+    gap: 10px;
+}
+
+.localitation {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.localitation-address {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.localitation-address-title {
+    font-size: 30px;
+}
+
+.localitation-socials-media {
+    display: flex;
+    gap: 10px;
+}
+
+.localitation-social-media {
+    font-size: 25px;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.localitation-social-media:hover {
+    color: var(--primary-color-hover);
+    transform: translateY(-5px);
+}
+
+.map iframe {
+    width: 100%;
+    
+}
+
+/* Responsive
+------------------------------------ */
+
+/* 768px - Tablet
+------------------------------------ */
+@media only screen and (max-width: 768px) {
+
+    /* Hero Section
+    _________________________________ */
+    .hero-text {
+        width: 80%;
+    }
+
+    .publications-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        padding: 40px 20px;
+    }
+    
+    .publication {
+        width: 300px;
+        height: 515px;
+    }
+
+    /* Localutation Section */
+    .container-localitation-grid {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        margin: auto;
+    }
+
+    .localitation-address {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .localitation-socials-media {
+        justify-content: center;
+    }
+
+    .map {
+        width: 100%;
+    }
+
+    /* Container Form Grid 
+    _____________________________________*/
+
+    .container-form-grid {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .container-form-grid .grid-1 {
+        grid-row: 1;
+    }
+}
+
+/* 428px - mobile
+------------------------------------ */
+@media only screen and (max-width: 425px) {
+
+    .hero {
+        padding: var(--padding-section-mobile);
+    }
+
+    .hero-content {
+        padding: var(--padding-section-mobile);
+    }
+
+    .hero-title {
+        font-size: 40px;
+    }
+
+    .hero-text {
+        width: 100%;
+        padding: 0;
+    }
+
+    .container-form-grid, .container-form-text {
+        padding: var(--padding-section-mobile);
+    }
+
+}

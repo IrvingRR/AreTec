@@ -1,0 +1,64 @@
+{
+  "name": "AreTect",
+  "short_name": "AreTec",
+  "description": "Prueba AreTec PWA",
+  "background_color": "#AF7AC5",
+  "theme_color": "#7D3C98",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "./?utm_source=web_app_manifest",
+  "scope": "./",
+  "lang": "es-MX",
+  "icons": [
+    {
+      "src": "./img/AreTec.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/AreTec.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/AreTec.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/AreTec.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/AreTec.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/AreTec.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/AreTec.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/AreTec.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/AreTec.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/AreTec.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+  ]
+}

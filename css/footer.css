@@ -1,0 +1,21 @@
+/* Footer
+------------------------------------ */
+.footer {
+    width: 100%;
+    padding: var(--padding-section);
+    text-align: center;
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-link {
+    color: #fff;
+    transition: var(--transition);
+}
+
+.footer-link:hover {
+    color: var(--primary-color-hover);
+}
