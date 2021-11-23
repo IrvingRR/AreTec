@@ -26,6 +26,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="..//css/curses.css">
+    <link rel="stylesheet" href="..//css/modal.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="..//css/navbar.css">
 </head>
@@ -33,6 +34,17 @@
 </head>
 
 <body>
+
+    <!-- Modal Form -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="modal-btn-close" id="modal-btn-close">
+                <i class="far fa-times"></i>
+            </button>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScaStSMWFa5hQLtD61iF-Qcs_OG3n50GbHUR-bpF9Tjrzo1gA/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+        </div>
+    </div>
+
     <!-- Slider Section -->
     <div class="slider">
         <nav class="navbar" id="navbar">
@@ -92,13 +104,27 @@
         </div>
     </div>
 
+    <!-- Introduction Section -->
+    <div class="container-title">
+        <h2 class="container-title-title">
+            Video introductorio
+        </h2>
+        <hr class="rule-center">
+        <p class="cotainer-title-description">
+            Conoce de una mejor manera el objetivo de nuestro primer curso especializado en una de las metodologías agíles más populares, Kanban.
+        </p>
+    </div>
+    <div class="container-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ytdMvs79WmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
     <!-- Curses Section -->
     <div class="container-title">
-      <h2 class="container-title-title">
-        Cursos
-      </h2>
-      <hr class="rule-center">
-    </div>
+        <h2 class="container-title-title">
+          Cursos
+        </h2>
+        <hr class="rule-center">
+      </div>
 
     <div class="curses">
         <form class="form form-search">
@@ -276,7 +302,10 @@
                 <input type="text" class="form-input input-round" name="phone" placeholder="+52 618 111 1111" autocomplete="off">
             </div>
         </div>
-        <button class="form-button button-round">Inscribirme</button>
+        <div class="form-buttons">
+            <button class="form-button button-round" type="submit">Inscribirme</button>
+            <button class="form-button button-round" id="modal-btn-open">Otra forma</button>
+        </div>
       </form>
 
     <!-- Footer -->
@@ -295,6 +324,7 @@
     <script src="../js/navbar.js"></script>
     <script src="../js/messages.js"></script>
     <script src="../js/slider.js"></script>
+    <script src="../js/modal.js"></script>
     <script src="../js/script.js"></script>
 </body>
 

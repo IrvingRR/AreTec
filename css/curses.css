@@ -101,6 +101,18 @@
     transform: translateX(3px);
 }
 
+/* Introduction Video
+------------------------------------ */
+.container-video {
+    width: 100%;
+    padding: var(--padding-section);
+    text-align: center;
+}
+
+.container-video iframe {
+    margin: auto;
+}
+
 /* curses
 ------------------------------------ */
 .curses {
@@ -225,6 +237,16 @@
 
     .curse {
         margin: auto;
+    }
+
+    /* Introduction Video
+------------------------------------ */
+    .container-video {
+        padding: var(--padding-section-mobile);
+    }
+
+    .container-video iframe {
+        width: 100%;
     }
     
 }
