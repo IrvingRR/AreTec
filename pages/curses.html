@@ -192,13 +192,13 @@
             Realizar el proceso de inscripción para poder acceder a nuestros cursos 
         </p>
       </div>
-      <form class="form">
+      <form class="form" id="form">
         <div class="form-grid">
             <div class="form-group">
                 <input type="text" class="form-input input-round" name="name" placeholder="Karina Lizbeth" autocomplete="off">
             </div>
             <div class="form-group">
-                <input type="text" class="form-input input-round" name="lastName" placeholder="Rosales Dominguez" autocomplete="off">
+                <input type="text" class="form-input input-round" name="lastname" placeholder="Rosales Dominguez" autocomplete="off">
             </div>
             <div class="form-group">
                 <input type="email" class="form-input input-round" name="email" placeholder="tucorreo@ejemplo.com" autocomplete="off">
@@ -214,7 +214,7 @@
             </div>
         </div>
         <div class="form-buttons">
-            <button class="form-button button-round" type="submit">Inscribirme</button>
+            <input class="form-button button-round" type="submit" value="Inscribirme" id="btn-register">
             <button class="form-button button-round" id="modal-btn-open">Otra forma</button>
         </div>
       </form>
@@ -230,6 +230,7 @@
       </footer>
 
     <!-- Scripts -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-messaging.js"></script>
     <script src="../js/navbar.js"></script>
@@ -237,6 +238,7 @@
     <script src="../js/slider.js"></script>
     <script src="../js/modal.js"></script>
     <script src="../js/script.js"></script>
+    <script src="../js/register-curse.js"></script>
 </body>
 
 </html>
